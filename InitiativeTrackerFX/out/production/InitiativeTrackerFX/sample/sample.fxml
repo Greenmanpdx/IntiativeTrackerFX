@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="AddNPCbtn" layoutX="34.0" layoutY="229.0" mnemonicParsing="false" text="Add NPC" />
+      <Button fx:id="AddPlayerbtn" layoutX="30.0" layoutY="144.0" mnemonicParsing="false" text="Add Player" />
+      <Button fx:id="StartCombatbtn" layoutX="127.0" layoutY="326.0" mnemonicParsing="false" text="Start Combat" />
+      <Label layoutX="54.0" layoutY="24.0" text="Initiative Tracker">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TableView layoutX="135.0" layoutY="100.0" prefHeight="200.0" prefWidth="184.0">
+        <columns>
+          <TableColumn fx:id="initiativeCoumn" prefWidth="62.0" text="Initiative" />
+          <TableColumn fx:id="nameColumn" editable="false" prefWidth="88.0" text="Character" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
